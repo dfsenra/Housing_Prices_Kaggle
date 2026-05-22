@@ -10,7 +10,8 @@ O objetivo principal é prever o preço final de venda de imóveis residenciais 
 Prever o valor de um imóvel vai muito além de olhar para o seu tamanho, localização e outras características (dando um spoiler do ponto fraco do meu modelo!).  
 Este projeto investiga como diversas variáveis interagem para compor o preço de mercado. 
 
-O modelo final atingiu um **Erro Absoluto Médio (MAE) de ~16.336 USD** na validação local, demonstrando uma ótima estabilidade e consistência estatística.
+O modelo final atingiu um **Erro Absoluto Médio (MAE) de ~16.336 USD** na validação local, demonstrando uma ótima estabilidade e consistência estatística.  
+Aleḿ disso o score obtido foi suficiente para colocar o modelo no top 400 do Kaggle.
 
 ---
 
@@ -68,4 +69,5 @@ O algoritmo escolhido foi o **XGBoost Regressor**, configurado para priorizar a 
 
 ## Conclusões e Próximos Passos
 
-Dada as limitações deste modelo, sugere-se o seu uso focado em imóveis de baixo e médio padrão em Ames. Para uma versão aprimorada, a sugestão seria a criação de variáveis capazes distinguir imóveis de luxo com características compactas.
+Dada as limitações deste modelo, sugere-se o seu uso focado em imóveis de baixo e médio padrão em Ames. Para uma versão aprimorada, a sugestão seria a criação de variáveis capazes distinguir imóveis de luxo com características compactas.  
+Como dica por onde começar eu tentaria dar pesos para regiões, favorecendo a região Norte por exemplo, como uma forma de calibrar melhor os preços dessa região independente de outras características.
